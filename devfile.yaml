@@ -31,10 +31,9 @@ components:
     kubernetes:
       uri: deploy.yaml
       endpoints:
-        - name: https-443
-          targetPort: 443
+        - name: web
+          targetPort: 80
           path: /
-          secure: true
 commands:
   - id: build-image
     apply:
