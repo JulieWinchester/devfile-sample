@@ -31,8 +31,8 @@ components:
     kubernetes:
       uri: deploy.yaml
       endpoints:
-        - name: http-3001
-          targetPort: 3001
+        - name: http-80
+          targetPort: 80
           path: /
           secure: true
 commands:
